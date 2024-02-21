@@ -9,3 +9,7 @@ jobs:
         run: sudo apt update
       - name: Check out repository code
         uses: actions/checkout@v4
+      - name: Install pip
+        run: sudo apt install python3-pip
+      - name: Install requirements
+        run: pip install -r requirement.txt
