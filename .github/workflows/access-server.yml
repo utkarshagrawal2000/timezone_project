@@ -8,7 +8,7 @@ jobs:
       - name: Create a file
         uses: appleboy/ssh-action@master
         with:
-          host: 3.111.144.91
-          username: ubuntu
+          host: ${{ secrets.HOSTNAME }}
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
           script: echo helloo world > hello.txt
