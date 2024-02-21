@@ -1,9 +1,27 @@
-name: Run tests
-on: push
+name: Run tests and deploy
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch as needed
+
 jobs:
-  execute_tests:
-    name: Install requirements and execute tests
+  execute_tests_and_deploy:
+    name: Install requirements, execute tests, and deploy
     runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:latest
+        env:
+          MYSQL_ROOT_PASSWORD: root_password
+          MYSQL_DATABASE: database_name
+          MYSQL_USER: username
+          MYSQL_PASSWORD: password
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
     steps:
       - name: Update
         run: sudo apt update
@@ -23,8 +41,24 @@ jobs:
         run: |
           source venv/bin/activate
           pip install -r p1/requirement.txt
+          pip install django  # Ensure Django is installed
 
       - name: Execute tests
         run: |
           source venv/bin/activate
           python p1/manage.py test app
+
+      - name: Deploy to AWS EC2
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd /path/to/your/django/project
+            git pull origin main  # Assuming you're deploying from the main branch
+            source venv/bin/activate
+            python p1/manage.py migrate
+            python p1/manage.py collectstatic --no-input
+            sudo systemctl restart gunicorn  # Restart Gunicorn or your application server
