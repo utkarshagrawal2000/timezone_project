@@ -9,7 +9,15 @@ jobs:
         run: sudo apt update
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Install pip
-        run: sudo apt install python3-pip
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Create virtual environment
+        run: python -m venv venv
       - name: Install requirements
-        run: pip install -r p1/requirement.txt
+        run: |
+          source venv/bin/activate
+          pip install -r p1/requirement.txt
+      - name: Execute tests
+        run: python manage.py test app
