@@ -40,34 +40,3 @@ def create_booking(request):
         serializer.save()
         return Response({'msg':'created'}, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-# @api_view(['POST'])
-# def create_booking(request):
-#     print('Request headers:', request.headers)
-#     data = request.data
-#     timezone_name = request.META.get('HTTP_USER_TIMEZONE', 'UTC')  # Get timezone from request headers
-#     print('Received timezone:', timezone_name)
-#     user_timezone = pytz.timezone(timezone_name)
-#     start_time=data['start_time']
-#     end_time=data['end_time']
-#     # Convert string to datetime object
-#     sdt = datetime.strptime(start_time, '%Y-%m-%dT%H:%M')
-#     localized_sdt = user_timezone.localize(sdt)
-#     edt = datetime.strptime(end_time, '%Y-%m-%dT%H:%M')
-#     localized_edt = user_timezone.localize(edt)
-
-#     print(localized_sdt,'localized_sdt')
-#     print(localized_edt,'localized_edt')
-#     # Convert start_time and end_time to UTC
-#     utc_start_time = localized_sdt.astimezone(pytz.utc)
-#     utc_end_time = localized_edt.astimezone(pytz.utc)
-
-#     print(utc_start_time,'utc_start_time')
-#     print(utc_end_time,'utc_end_time')
-#     serializer = BookingSerializer(data={**data, 'start_time': utc_start_time, 'end_time': utc_end_time})
-#     if serializer.is_valid():
-#         serializer.save()
-#         return Response(serializer.data, status=status.HTTP_201_CREATED)
-#     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
