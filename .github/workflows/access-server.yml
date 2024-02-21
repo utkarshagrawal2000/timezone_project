@@ -11,4 +11,4 @@ jobs:
           host: 3.111.144.91
           username: ubuntu
           key: ${{ secrets.PRIVATE_KEY }}
-          script: echo hello world > hello.txt
+          script: echo helloo world > hello.txt
