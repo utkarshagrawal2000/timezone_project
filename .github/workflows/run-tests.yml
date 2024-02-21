@@ -12,4 +12,4 @@ jobs:
       - name: Install pip
         run: sudo apt install python3-pip
       - name: Install requirements
-        run: pip install -r requirement.txt
+        run: pip install -r p1/requirement.txt
