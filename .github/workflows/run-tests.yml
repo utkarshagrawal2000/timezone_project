@@ -20,4 +20,4 @@ jobs:
           source venv/bin/activate
           pip install -r p1/requirement.txt
       - name: Execute tests
-        run: python manage.py test app
+        run: python p1/manage.py test app
