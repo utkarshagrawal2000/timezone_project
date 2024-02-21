@@ -23,7 +23,6 @@ jobs:
         run: |
           source venv/bin/activate
           pip install -r p1/requirement.txt
-          pip install django  # Ensure Django is installed
 
       - name: Execute tests
         run: |
