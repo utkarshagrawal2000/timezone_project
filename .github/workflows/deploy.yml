@@ -26,4 +26,4 @@ jobs:
             scp -r p1/* ubuntu@3.111.144.91:/home/ubuntu/deployment
             
             # Restart services like Gunicorn
-            sudo systemctl restart gunicorn
+            #sudo systemctl restart gunicorn
