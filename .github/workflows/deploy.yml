@@ -1,0 +1,27 @@
+name: Deploy to EC2 🚀
+
+on:
+  push:
+    branches:
+      - "main" # This triggers the workflow on push to any branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: pip install -r p1/requirement.txt
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOSTNAME }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          script: |
+            # Create a directory on the server if it doesn't exist
+             "mkdir -p /home/ubuntu/deployment"
+
+            # Copy project files to the server
+            scp -r p1/* ubuntu@3.111.144.91:/home/ubuntu/deployment
+          
