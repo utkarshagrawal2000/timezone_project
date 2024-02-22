@@ -29,7 +29,7 @@ jobs:
           script: |
             # Create a directory on the server if it doesn't exist
             mkdir -p /home/ubuntu/deployment
-
+          run: |
             # Copy project files to the server
             scp -r p1/* $EC2_USERNAME@$EC2_HOST:/home/ubuntu/deployment
             
