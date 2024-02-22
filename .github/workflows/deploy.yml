@@ -11,8 +11,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+      - name: Set up SSH key and whitelist EC2 IP address 🐻‍❄️
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan ${{ secrets.HOSTNAME }} >> ~/.ssh/known_hosts
       - name: Deploy to server
+        env:
+          EC2_HOST: ${{ secrets.HOSTNAME }}
+          EC2_USERNAME: ${{ secrets.USERNAME }}
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOSTNAME }}
@@ -23,7 +31,7 @@ jobs:
             mkdir -p /home/ubuntu/deployment
 
             # Copy project files to the server
-            scp -r p1/* ubuntu@3.111.144.91:/home/ubuntu/deployment
+            scp -r p1/* $EC2_USERNAME@$EC2_HOST:/home/ubuntu/deployment
             
             # Restart services like Gunicorn
             #sudo systemctl restart gunicorn
