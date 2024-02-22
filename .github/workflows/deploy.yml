@@ -31,5 +31,5 @@ jobs:
             scp -r p1/* $EC2_USERNAME@$EC2_HOST:/home/ubuntu/deployment
             
             # Restart services like Gunicorn
-            sudo systemctl restart gunicorn
+            sudo systemctl restart gunicorn.service
             sudo systemctl status nginx.service
