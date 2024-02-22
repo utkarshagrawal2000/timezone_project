@@ -29,7 +29,7 @@ jobs:
         run: |
             # Copy project files to the server
             scp -r p1/* $EC2_USERNAME@$EC2_HOST:/home/ubuntu/deployment
-            ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_HOST "chmod +x ./deploy.sh && ./deploy.sh"
+            ssh $EC2_USERNAME@$EC2_HOST "chmod +x /home/ubuntu/deployment/deploy.sh && /home/ubuntu/deployment/deploy.sh"
       - name: Clean up SSH key 🚀
         if: always()
         run: rm -f ~/.ssh/id_rsa
