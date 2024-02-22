@@ -30,9 +30,6 @@ jobs:
             # Copy project files to the server
             scp -r p1/* $EC2_USERNAME@$EC2_HOST:/home/ubuntu/deployment
             ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_HOST "chmod +x ./deploy.sh && ./deploy.sh"
-            # Restart services like Gunicorn
-            #sudo systemctl restart gunicorn.service
-            sudo systemctl status nginx.service
       - name: Clean up SSH key 🚀
         if: always()
         run: rm -f ~/.ssh/id_rsa
