@@ -6,9 +6,16 @@ from datetime import datetime
 import pytz
 from app.models import Booking
 from app.serializers import BookingSerializer
+from django.core.cache import cache  # Import cache module
 
 
 class BookingViewsTestCase(APITestCase):
+
+    def setUp(self):
+        # Disable caching before each test
+        cache.clear()
+
+
     def test_get_bookings(self):
         # Create some sample Booking instances
         booking_data = [
