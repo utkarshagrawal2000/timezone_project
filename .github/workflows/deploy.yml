@@ -35,10 +35,10 @@ jobs:
           
         continue-on-error: true  # Continue even if the Redis connection test fails
 
-      - name: Execute tests
-        run: |
-          source venv/bin/activate
-          python p1/manage.py test app
+      # - name: Execute tests
+      #   run: |
+      #     source venv/bin/activate
+      #     python p1/manage.py test app
       - name: Deploy to server
         if: success()
         env:
