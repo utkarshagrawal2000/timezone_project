@@ -8,15 +8,12 @@ from .serializers import BookingSerializer
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from django.core.cache import cache
-from django.utils.decorators import method_decorator
-from django.views.decorators.cache import cache_page
 
 CACHE_TIMEOUT = 30
 
 
 @swagger_auto_schema(method='GET', responses={200: BookingSerializer(many=True)})
 @api_view(['GET'])
-@method_decorator(cache_page(CACHE_TIMEOUT), name='dispatch')
 def get_bookings(request):
     """
     Retrieves a list of bookings.
@@ -51,7 +48,8 @@ def create_booking(request):
     if serializer.is_valid():
         print(serializer.validated_data)
         serializer.save()
-        # Clear cache for bookings since there's a new booking added
-        cache.delete_pattern("bookings_*")
+        # Clear cache for bookings specific to the timezone
+        cache_key = f"bookings_{timezone_name}"
+        cache.delete(cache_key)
         return Response({'msg':'created'}, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
