@@ -31,7 +31,7 @@ jobs:
           source venv/bin/activate
           pip install -r p1/requirement.txt
       - name: Test Redis Connection
-        run: /usr/bin/redis-cli -h localhost -p 6379 ping
+        run: /var/lib/docker/overlay2/ec672fa3a1e67ec0ba395ce2d082bcbff1e2521c2822ed8dec0c9722b26acf93/merged/opt/redis-stack/bin/redis-cli -h localhost -p 6379 ping
           
         continue-on-error: true  # Continue even if the Redis connection test fails
 
