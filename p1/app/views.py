@@ -24,6 +24,7 @@ def get_bookings(request):
     cache_key = f"bookings_{timezone_name}"
     cached_data = cache.get(cache_key)
     if cached_data:
+        print(cached_data)
         return Response(cached_data, status=status.HTTP_200_OK)
     bookings = Booking.objects.all()
     serializer = BookingSerializer(instance=bookings, context={'timezone_name': timezone_name},many=True)
