@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'p1.wsgi.application'
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379/1',  # Redis server location (change if needed)
+        'LOCATION': 'redis://127.0.0.1:6379/0',  # Redis server location (change if needed)
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
