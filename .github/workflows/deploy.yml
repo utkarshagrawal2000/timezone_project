@@ -35,7 +35,13 @@ jobs:
             source venv/bin/activate
             python -m pip install --upgrade pip
             pip install redis redis-cli
-            redis-cli -h 65.2.177.148 -p 6379 ping
+        
+            # Try installing redis-tools
+            sudo apt-get update
+            sudo apt-get install redis-tools
+        
+            # Try specifying full path to redis-cli
+            /usr/bin/redis-cli -h 65.2.177.148 -p 6379 ping
         continue-on-error: true
 
       - name: Execute tests
