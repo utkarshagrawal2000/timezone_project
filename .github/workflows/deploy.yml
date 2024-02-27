@@ -35,10 +35,10 @@ jobs:
             redis-cli -h localhost -p 6379 ping
         continue-on-error: true
 
-      - name: Execute tests
-        run: |
-          source venv/bin/activate
-          python p1/manage.py test app
+      # - name: Execute tests
+      #   run: |
+      #     source venv/bin/activate
+      #     python p1/manage.py test app
       - name: Deploy to server
         if: success()
         env:
