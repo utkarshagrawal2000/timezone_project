@@ -9,7 +9,7 @@ from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from django.core.cache import cache
 
-CACHE_TIMEOUT = 30
+CACHE_TIMEOUT = 10
 
 
 @swagger_auto_schema(method='GET', responses={200: BookingSerializer(many=True)})
