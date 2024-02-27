@@ -30,19 +30,19 @@ jobs:
         run: |
           source venv/bin/activate
           pip install -r p1/requirement.txt
-      - name: Test Redis Connection
-        run: |
-            source venv/bin/activate
-            python -m pip install --upgrade pip
-            pip install redis redis-cli
+      # - name: Test Redis Connection
+      #   run: |
+      #       source venv/bin/activate
+      #       python -m pip install --upgrade pip
+      #       pip install redis redis-cli
         
-            # Try installing redis-tools
-            sudo apt-get update
-            sudo apt-get install redis-tools
+      #       # Try installing redis-tools
+      #       sudo apt-get update
+      #       sudo apt-get install redis-tools
         
-            # Try specifying full path to redis-cli
-            /usr/bin/redis-cli -h 65.2.177.148 -p 6379 ping
-        continue-on-error: true
+      #       # Try specifying full path to redis-cli
+      #       /usr/bin/redis-cli -h 65.2.177.148 -p 6379 ping
+      #   continue-on-error: true
 
       - name: Execute tests
         run: |

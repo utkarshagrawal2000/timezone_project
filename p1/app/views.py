@@ -21,7 +21,7 @@ def get_bookings(request):
     timezone_name = request.META.get('HTTP_USER_TIMEZONE', 'UTC')  # Get timezone from request headers
     print(timezone_name,'timezone_name')
     # Check cache first
-    cache_key = f"bookings_{timezone_name}"
+    cache_key = f"get:bookings_{timezone_name}"
     cached_data = cache.get(cache_key)
     if cached_data:
         print(cached_data)
