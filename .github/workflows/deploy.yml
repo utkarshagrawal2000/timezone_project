@@ -38,6 +38,8 @@ jobs:
       - name: Execute tests
         run: |
           source venv/bin/activate
+          python -m pip install --upgrade pip
+          pip install redis redis-cli
           python p1/manage.py test app
       - name: Deploy to server
         if: success()
