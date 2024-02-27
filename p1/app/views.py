@@ -29,7 +29,8 @@ def get_bookings(request):
     bookings = Booking.objects.all()
     serializer = BookingSerializer(instance=bookings, context={'timezone_name': timezone_name},many=True)
     # Set cache
-    cache.set(cache_key, serializer.data, timeout=CACHE_TIMEOUT)
+    cache.set(cache_key, serializer.data)
+    # cache.set(cache_key, serializer.data, timeout=CACHE_TIMEOUT)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 @swagger_auto_schema(method='POST', request_body=BookingSerializer, responses={201: openapi.Response('Created')},
