@@ -44,12 +44,12 @@ jobs:
       #       /usr/bin/redis-cli -h 65.2.177.148 -p 6379 ping
       #   continue-on-error: true
 
-      # - name: Execute tests
-      #   run: |
-      #     source venv/bin/activate
-      #     python -m pip install --upgrade pip
-      #     pip install redis redis-cli
-      #     python p1/manage.py test app
+      - name: Execute tests
+        run: |
+          source venv/bin/activate
+          python -m pip install --upgrade pip
+          pip install redis redis-cli
+          python p1/manage.py test app
       - name: Deploy to server
         if: success()
         env:

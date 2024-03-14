@@ -7,7 +7,7 @@ if ! command -v nginx &> /dev/null; then
     sudo apt install nginx -y
 fi
 
-sudo systemctl restart nginx
+sudo systemctl restart gunicorn.service nginx.service
 
 # Check if virtual environment exists
 if [ ! -d "/home/ubuntu/myprojectenv" ]; then

@@ -1,20 +1,28 @@
-from rest_framework.test import APITestCase
+from rest_framework.test import APITestCase, force_authenticate
+from rest_framework.authtoken.models import Token
+from django.contrib.auth import get_user_model
 from django.urls import reverse
 from rest_framework import status
-from django.test import TestCase
 from datetime import datetime
 import pytz
+from rest_framework_simplejwt.tokens import RefreshToken
 from app.models import Booking
 from app.serializers import BookingSerializer
 from django.core.cache import cache  # Import cache module
 
-
+User = get_user_model()
+def get_tokens_for_user(user):
+  refresh = RefreshToken.for_user(user)
+  return str(refresh.access_token)
+  
 class BookingViewsTestCase(APITestCase):
 
     def setUp(self):
         # Disable caching before each test
         cache.clear()
-
+         # Create a test user and authenticate
+        self.user = User.objects.create_user(username='testuser', email='test@example.com', password='password123',mobile='999999999',tc='1',is_admin=True)
+        self.token = get_tokens_for_user(self.user)
 
     def test_get_bookings(self):
         # Create some sample Booking instances
@@ -26,10 +34,20 @@ class BookingViewsTestCase(APITestCase):
             Booking.objects.create(**data)
 
         url = reverse('booking-list-create')
+        
         # Set the desired timezone in the request header
-        headers = {'HTTP_USER_TIMEZONE': 'America/New_York'}
+        headers = {
+            'HTTP_USER_TIMEZONE': 'America/New_York',
+            'HTTP_AUTHORIZATION': f'Bearer {self.token}'
+        }
+
+        print("Request Headers:", headers)
+
         response = self.client.get(url, **headers)
         
+        print("Response Status Code:", response.status_code)
+        print("Response Data:", response.data)
+
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         # Verify that the response contains the bookings in the correct representation for the specified timezone
         self.assertEqual(len(response.data), 2)  # Assuming there are 2 bookings
@@ -38,8 +56,13 @@ class BookingViewsTestCase(APITestCase):
     def test_create_booking(self):
         url = reverse('create_booking')
         # Set the desired timezone in the request header
-        headers = {'HTTP_USER_TIMEZONE': 'America/New_York'}
+        headers = {'HTTP_USER_TIMEZONE': 'America/New_York',
+            'HTTP_AUTHORIZATION': f'Bearer {self.token}'
+        }
         data = {'room': 'Room 103', 'start_time': '2024-02-18T09:00', 'end_time': '2024-02-18T10:00'}
+        
+
+        
         response = self.client.post(url, data, format='json', **headers)
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
