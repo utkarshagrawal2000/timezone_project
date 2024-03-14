@@ -65,11 +65,7 @@ class BookingViewsTestCase(APITestCase):
             'HTTP_AUTHORIZATION': f'Bearer {self.token}'
         }
         data = {'room': 'Room 103', 'start_time': '2024-02-18T09:00', 'end_time': '2024-02-18T10:00'}
-        
-
-        
         response = self.client.post(url, data, format='json', **headers)
-
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         # Verify that the booking was created successfully
         self.assertEqual(Booking.objects.count(), 1)
@@ -88,11 +84,9 @@ class RegistrationLoginTestCase(APITestCase):
 
     def test_user_registration(self):
         url = reverse('register')
-        print(url)
         data = {"username": "testuser1", "email": "test1@example.com", "password": "password123", "password2": "password123", "mobile": "999999996", "tc": "1", "is_admin": "true"}
         request = self.factory.post(url, data, format='json')
         response = UserRegistrationView.as_view()(request)
-        print(response,'ddddddddddddddddddddddddddddddd')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertTrue('token' in response.data)
 
