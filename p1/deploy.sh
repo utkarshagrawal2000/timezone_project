@@ -20,3 +20,5 @@ cd /home/ubuntu/
 source myprojectenv/bin/activate
 cd deployment/
 pip install -r requirement.txt
+python manage.py makemigrations
+python manage.py migrate
