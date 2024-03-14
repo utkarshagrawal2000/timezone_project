@@ -55,7 +55,6 @@ class UserLoginView(APIView):
     email=x['email'] 
     password=x['password']
     user = authenticate(username=email, password=password)
-    request.session['signin'] = email
     if user is not None:
       if user.is_active:
         user1 = user.is_admin

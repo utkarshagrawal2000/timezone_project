@@ -9,6 +9,11 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from app.models import Booking
 from app.serializers import BookingSerializer
 from django.core.cache import cache  # Import cache module
+from account.views import UserRegistrationView, UserLoginView
+from rest_framework.test import APIRequestFactory
+from rest_framework.decorators import authentication_classes, permission_classes
+
+
 
 User = get_user_model()
 def get_tokens_for_user(user):
@@ -72,3 +77,30 @@ class BookingViewsTestCase(APITestCase):
         self.assertEqual(new_booking.room, 'Room 103')
         # You may want to perform more detailed assertions on the created booking
 
+
+@authentication_classes([])  # No authentication required
+@permission_classes([])  
+class RegistrationLoginTestCase(APITestCase):
+    def setUp(self):
+        self.factory = APIRequestFactory()
+        self.user = User.objects.create_user(username='testuser', email='test@example.com', password='password123',mobile='999999999',tc='1',is_admin=True)
+        self.token = get_tokens_for_user(self.user)
+
+    def test_user_registration(self):
+        url = reverse('register')
+        print(url)
+        data = {"username": "testuser1", "email": "test1@example.com", "password": "password123", "password2": "password123", "mobile": "999999996", "tc": "1", "is_admin": "true"}
+        request = self.factory.post(url, data, format='json')
+        response = UserRegistrationView.as_view()(request)
+        print(response,'ddddddddddddddddddddddddddddddd')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertTrue('token' in response.data)
+
+    def test_user_login(self):
+        url = reverse('login')
+        data = {'email': 'test@example.com', 'password': 'password123'}
+        request = self.factory.post(url, data, format='json')
+        response = UserLoginView.as_view()(request)
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertTrue('token' in response.data)
