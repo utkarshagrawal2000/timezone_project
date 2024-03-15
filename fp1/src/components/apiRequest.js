@@ -3,7 +3,7 @@
 import axios from 'axios';
 import { refreshToken, logout } from './authService';
 
-const API_URL = 'http://localhost:8000/';
+const API_URL = 'http://65.2.177.148/';
 
 let isRefreshing = false;
 let refreshQueue = [];

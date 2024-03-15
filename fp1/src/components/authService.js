@@ -4,7 +4,7 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
 
 
-const API_URL = 'http://localhost:8000/';
+const API_URL = 'http://65.2.177.148/';
 
 const refreshToken = async () => {
   const refreshToken = localStorage.getItem('refreshToken');
