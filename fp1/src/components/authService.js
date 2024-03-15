@@ -4,7 +4,7 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
 
 
-const API_URL = 'http://65.2.177.148/';
+const API_URL = 'http://localhost:8000/';
 
 const refreshToken = async () => {
   const refreshToken = localStorage.getItem('refreshToken');
@@ -29,9 +29,11 @@ const refreshToken = async () => {
 };
 
 const logout = (navigate) => {
+  console.log('logdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd')
   localStorage.removeItem('accessToken');
   localStorage.removeItem('refreshToken');
   localStorage.removeItem('expirationTime');
+  localStorage.removeItem('privilege');
   navigate('/');
   // Additional cleanup if needed
 };

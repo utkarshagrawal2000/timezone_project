@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import apiRequest from './apiRequest';
 import TimezoneSelect from 'react-timezone-select';
 import { refreshToken } from './authService';
+import { useNavigate } from 'react-router-dom';
 function Home() {
   const [bookings, setBookings] = useState([]);
   const [formData, setFormData] = useState({
@@ -12,39 +13,27 @@ function Home() {
     end_time: ''
   });
   const [selectedTimezone, setSelectedTimezone] = useState('UTC');
-  const [lastTabSwitchTime, setLastTabSwitchTime] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchBookings();
-    const tabSwitchListener = () => {
-      setLastTabSwitchTime(Date.now());
-    };
-    document.addEventListener('visibilitychange', tabSwitchListener);
-    return () => {
-      document.removeEventListener('visibilitychange', tabSwitchListener);
-    };
+
+    // Refresh bookings every 1 minute
+    const interval = setInterval(fetchBookings, 60000);
+
+    // Clear interval on component unmount
+    return () => clearInterval(interval);
   }, [selectedTimezone]);
 
-  useEffect(() => {
-    const refreshInterval = setInterval(() => {
-      const accessToken = localStorage.getItem('accessToken');
-      const expirationTime = localStorage.getItem('expirationTime');
-      if (accessToken && expirationTime) {
-        const expiresIn = parseInt(expirationTime) - Date.now();
-        if (expiresIn < 300000) { // If expiration time is less than 5 minutes
-          refreshToken();
-        }
-      }
-    }, 300000); // Check every 5 minutes
-    return () => clearInterval(refreshInterval);
-  }, []);
+  
 
   const fetchBookings = async () => {
     try {
       const headers = {
         'user-timezone': selectedTimezone
       };
-      const response = await apiRequest('GET', 'get_bookings/', null, headers);
+      const response = await apiRequest('GET', 'get_bookings/', null, headers, navigate);
       setBookings(response);
     } catch (error) {
       console.error('Error fetching bookings:', error);
@@ -65,7 +54,7 @@ function Home() {
       const headers = {
         'user-timezone': selectedTimezone
       };
-      await apiRequest('POST', 'create_booking/', formData, headers);
+      await apiRequest('POST', 'create_booking/', formData, headers, navigate);
       fetchBookings();
       setFormData({
         room: '',
