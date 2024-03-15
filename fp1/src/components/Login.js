@@ -1,5 +1,8 @@
+// Login.js
+
 import React, { useState } from 'react';
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import {jwtDecode} from "jwt-decode";
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -21,10 +24,19 @@ const Login = () => {
             const data = await response.json();
 
             if (response.ok) {
-                // Login successful, store token in localStorage
+                // Login successful, store token and expiration time in localStorage
                 localStorage.setItem('accessToken', data.token.access);
-                localStorage.setItem('refresh', data.token.refresh);
+                localStorage.setItem('refreshToken', data.token.refresh);
                 localStorage.setItem('privilege', data.token.privilege);
+                // Parse the expiration time to ensure it is a number
+                const expirationTime = jwtDecode(data.token.access).exp * 1000;
+                console.log(expirationTime);
+                // const expirationTime = parseInt(data.token.access_exp); // Assuming access_exp is in seconds
+                if (!isNaN(expirationTime)) {
+                    localStorage.setItem('expirationTime', expirationTime.toString());
+                } else {
+                    console.error('Invalid expiration time received:', data.token.access_exp);
+                }
                 // Redirect to home page
                 navigate('/home');
             } else {
@@ -41,7 +53,7 @@ const Login = () => {
         <div>
             <h2>Login</h2>
             <div>
-                <label>email:</label>
+                <label>Email:</label>
                 <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div>
