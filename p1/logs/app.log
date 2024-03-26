@@ -1,1 +1,28 @@
 2024-03-26 15:35:30 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-26 15:44:28 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-03-26 15:44:29 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-26 16:33:40 [WARNING] django.request: Not Found: /
+2024-03-26 16:33:40 [WARNING] django.server: "GET / HTTP/1.1" 404 1157
+2024-03-26 16:33:45 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 635
+2024-03-26 16:33:46 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1043
+2024-03-26 16:36:06 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 682
+2024-03-26 16:36:07 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1053
+2024-03-26 16:41:00 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 702
+2024-03-26 16:41:04 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 651
+2024-03-26 16:41:05 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 641
+2024-03-26 16:41:08 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 620
+2024-03-26 16:41:09 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1032
+2024-03-26 16:41:49 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 637
+2024-03-26 16:41:49 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1010
+2024-03-26 16:42:00 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css.map HTTP/1.1" 200 251096
+2024-03-26 16:42:00 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 517830
+2024-03-26 16:42:00 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map HTTP/1.1" 200 1540070
+2024-03-26 16:50:17 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 641
+2024-03-26 16:56:56 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-26 16:56:57 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-26 16:57:17 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-26 16:57:18 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-26 16:57:51 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-26 16:57:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-26 16:58:08 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-26 16:58:09 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
