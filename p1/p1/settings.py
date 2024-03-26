@@ -223,6 +223,7 @@ LOGGING = {
             'interval': 1,
             'backupCount': 10,
             'formatter': 'standard',
+             'encoding': 'utf-8',
         },
         'console': {
             'level': 'DEBUG',  # Also log to console for development/debugging
@@ -236,7 +237,7 @@ LOGGING = {
             'level': 'INFO',  # Set Django logger level to INFO
             'propagate': False,  # Prevent propagation to the root logger
         },
-        'your_app': {  # Change 'your_app' to the name of your Django app
+        '': {  # Change 'your_app' to the name of your Django app or leave blank to captures all loggers
             'handlers': ['file', 'console'],
             'level': 'DEBUG',
             'propagate': False,
@@ -244,7 +245,8 @@ LOGGING = {
     },
     'formatters': {
         'standard': {
-            'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s'
+            'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S',  # Date format for log messages
         },
     },
 }
