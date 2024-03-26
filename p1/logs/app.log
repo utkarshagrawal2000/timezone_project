@@ -26,3 +26,8 @@
 2024-03-26 16:57:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2024-03-26 16:58:08 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
 2024-03-26 16:58:09 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-26 16:58:49 [WARNING] django.request: Not Found: /
+2024-03-26 16:58:49 [WARNING] django.server: "GET / HTTP/1.1" 404 1098
+2024-03-26 16:59:02 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 1575
+2024-03-26 17:05:34 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-26 17:05:34 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
