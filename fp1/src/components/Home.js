@@ -1,5 +1,3 @@
-// Home.js
-
 import React, { useState, useEffect } from 'react';
 import apiRequest from './apiRequest';
 import TimezoneSelect from 'react-timezone-select';
@@ -18,12 +16,6 @@ function Home() {
 
   useEffect(() => {
     fetchBookings();
-
-    // Refresh bookings every 1 minute
-    const interval = setInterval(fetchBookings, 60000);
-
-    // Clear interval on component unmount
-    return () => clearInterval(interval);
   }, [selectedTimezone]);
 
   

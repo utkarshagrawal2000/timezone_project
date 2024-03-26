@@ -2,6 +2,7 @@
 
 import axios from 'axios';
 import { refreshToken, logout } from './authService';
+import { useNavigate } from 'react-router-dom';
 
 const API_URL = 'http://65.2.177.148/';
 
@@ -26,7 +27,7 @@ const apiRequest = async (method, url, data = null, headers = {}, navigate) => {
       if (!isRefreshing) {
         isRefreshing = true;
         try {
-          const newAccessToken = await refreshToken();
+          const newAccessToken = await refreshToken(useNavigate);
           localStorage.setItem('accessToken', newAccessToken);
           // Retry the queued requests with the new access token
           while (refreshQueue.length > 0) {
@@ -64,7 +65,7 @@ const apiRequest = async (method, url, data = null, headers = {}, navigate) => {
       if (!isRefreshing) {
         isRefreshing = true;
         try {
-          const newAccessToken = await refreshToken();
+          const newAccessToken = await refreshToken(useNavigate);
           localStorage.setItem('accessToken', newAccessToken);
           // Retry the queued requests with the new access token
           while (refreshQueue.length > 0) {

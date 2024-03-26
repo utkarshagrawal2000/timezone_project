@@ -43,3 +43,20 @@ class TimezoneMiddleware:
         user_timezone = pytz.timezone(timezone_name)
         dt = datetime.strptime(value, '%Y-%m-%dT%H:%M').replace(tzinfo=user_timezone)
         return dt.astimezone(user_timezone).strftime('%d-%m-%Y %H:%M:%S')  # Convert to UTC format
+    
+
+
+import logging
+
+logger = logging.getLogger(__name__)
+
+class LogUnhandledExceptionMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        response = self.get_response(request)
+        return response
+
+    def process_exception(self, request, exception):
+        logger.exception('Unhandled exception occurred')

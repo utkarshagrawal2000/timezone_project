@@ -56,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.gzip.GZipMiddleware',
+    'app.middleware.LogUnhandledExceptionMiddleware',
 ]
 
 AUTH_USER_MODEL = 'account.User'
@@ -197,6 +198,53 @@ SWAGGER_SETTINGS = {
             'type': 'apiKey',
             'name': 'Authorization',
             'in': 'header',
+        },
+    },
+}
+
+
+import logging
+from logging.handlers import TimedRotatingFileHandler
+import os
+
+LOG_DIR = 'logs'
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',  # Set the minimum level to DEBUG
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'filename': os.path.join(LOG_DIR, 'app.log'),
+            'when': 'midnight',
+            'interval': 1,
+            'backupCount': 10,
+            'formatter': 'standard',
+        },
+        'console': {
+            'level': 'DEBUG',  # Also log to console for development/debugging
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file', 'console'],  # Add console handler
+            'level': 'INFO',  # Set Django logger level to INFO
+            'propagate': False,  # Prevent propagation to the root logger
+        },
+        'your_app': {  # Change 'your_app' to the name of your Django app
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
+    'formatters': {
+        'standard': {
+            'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s'
         },
     },
 }

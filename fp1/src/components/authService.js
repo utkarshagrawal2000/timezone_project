@@ -6,7 +6,7 @@ import { jwtDecode } from 'jwt-decode';
 
 const API_URL = 'http://65.2.177.148/';
 
-const refreshToken = async () => {
+const refreshToken = async (useNavigate) => {
   const refreshToken = localStorage.getItem('refreshToken');
 
   try {
@@ -23,6 +23,7 @@ const refreshToken = async () => {
 
     return access;
   } catch (error) {
+    logout(useNavigate)
     console.error('Token refresh failed:', error);
     throw error;
   }
