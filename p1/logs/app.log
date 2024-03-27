@@ -1,35 +1,407 @@
-2024-03-26 15:35:30 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
-2024-03-26 15:44:28 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
-2024-03-26 15:44:29 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
-2024-03-26 16:33:40 [WARNING] django.request: Not Found: /
-2024-03-26 16:33:40 [WARNING] django.server: "GET / HTTP/1.1" 404 1157
-2024-03-26 16:33:45 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 635
-2024-03-26 16:33:46 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1043
-2024-03-26 16:36:06 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 682
-2024-03-26 16:36:07 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1053
-2024-03-26 16:41:00 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 702
-2024-03-26 16:41:04 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 651
-2024-03-26 16:41:05 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 641
-2024-03-26 16:41:08 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 620
-2024-03-26 16:41:09 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1032
-2024-03-26 16:41:49 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 637
-2024-03-26 16:41:49 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1010
-2024-03-26 16:42:00 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css.map HTTP/1.1" 200 251096
-2024-03-26 16:42:00 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 517830
-2024-03-26 16:42:00 [INFO] django.server: "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map HTTP/1.1" 200 1540070
-2024-03-26 16:50:17 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 641
-2024-03-26 16:56:56 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
-2024-03-26 16:56:57 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
-2024-03-26 16:57:17 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
-2024-03-26 16:57:18 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
-2024-03-26 16:57:51 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
-2024-03-26 16:57:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
-2024-03-26 16:58:08 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
-2024-03-26 16:58:09 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
-2024-03-26 16:58:49 [WARNING] django.request: Not Found: /
-2024-03-26 16:58:49 [WARNING] django.server: "GET / HTTP/1.1" 404 1098
-2024-03-26 16:59:02 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 1575
-2024-03-26 17:05:34 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
-2024-03-26 17:05:34 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
-2024-03-26 17:35:50 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
-2024-03-26 17:35:51 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 12:42:12 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 12:42:33 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 90
+2024-03-27 13:07:06 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 90
+2024-03-27 13:12:48 [WARNING] django.request: Method Not Allowed: /user/login/
+2024-03-27 13:12:48 [WARNING] django.server: "GET /user/login/ HTTP/1.1" 405 53
+2024-03-27 13:18:36 [WARNING] django.request: Not Found: /
+2024-03-27 13:18:36 [WARNING] django.server: "GET / HTTP/1.1" 404 1117
+2024-03-27 13:18:42 [INFO] django.server: "GET /redoc/ HTTP/1.1" 200 490
+2024-03-27 13:18:42 [INFO] django.server: "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 200 2566
+2024-03-27 13:18:42 [INFO] django.server: "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 200 1042511
+2024-03-27 13:18:43 [INFO] django.server: "GET /redoc/?format=openapi HTTP/1.1" 200 1135
+2024-03-27 13:18:44 [INFO] django.server: "GET /static/drf-yasg/redoc/redoc-logo.png HTTP/1.1" 200 4969
+2024-03-27 13:30:18 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\views.py changed, reloading.
+2024-03-27 13:30:19 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 13:30:24 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 683
+2024-03-27 13:30:24 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 13:30:24 [ERROR] django.request: Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 13:30:24 [ERROR] django.server: "GET /swagger/?format=openapi HTTP/1.1" 500 18183
+2024-03-27 13:30:30 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 637
+2024-03-27 13:30:30 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 13:30:30 [ERROR] django.request: Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 13:30:30 [ERROR] django.server: "GET /swagger/?format=openapi HTTP/1.1" 500 18231
+2024-03-27 13:30:45 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\views.py changed, reloading.
+2024-03-27 13:30:46 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:33:48 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 621
+2024-03-27 14:33:48 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1160
+2024-03-27 14:34:24 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\views.py changed, reloading.
+2024-03-27 14:34:25 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:34:28 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 644
+2024-03-27 14:34:28 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 14:34:28 [ERROR] django.request: Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 14:34:28 [ERROR] django.server: "GET /swagger/?format=openapi HTTP/1.1" 500 18160
+2024-03-27 14:35:51 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\swagger_schemas.py changed, reloading.
+2024-03-27 14:35:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:36:07 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\views.py changed, reloading.
+2024-03-27 14:36:08 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:36:40 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\swagger_schemas.py changed, reloading.
+2024-03-27 14:36:41 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:36:45 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 626
+2024-03-27 14:36:46 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 14:36:46 [ERROR] django.request: Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 14:36:46 [ERROR] django.server: "GET /swagger/?format=openapi HTTP/1.1" 500 18175
+2024-03-27 14:37:33 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\views.py changed, reloading.
+2024-03-27 14:37:34 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:37:36 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\views.py changed, reloading.
+2024-03-27 14:37:36 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:37:40 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 662
+2024-03-27 14:37:40 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 14:37:40 [ERROR] django.request: Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 32, in get_operation
+    body = self.get_request_body_parameters(consumes)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 71, in get_request_body_parameters
+    serializer = self.get_request_serializer()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 118, in get_request_serializer
+    body_override = self._get_request_body_override()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\inspectors\view.py", line 108, in _get_request_body_override
+    return force_serializer_instance(body_override)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\drf_yasg\utils.py", line 318, in force_serializer_instance
+    assert isinstance(serializer, serializers.BaseSerializer), \
+AssertionError: Serializer class or instance required, not dict
+2024-03-27 14:37:40 [ERROR] django.server: "GET /swagger/?format=openapi HTTP/1.1" 500 18182
+2024-03-27 14:37:56 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\views.py changed, reloading.
+2024-03-27 14:37:56 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:38:01 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\account\views.py changed, reloading.
+2024-03-27 14:38:02 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 14:38:03 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 619
+2024-03-27 14:38:04 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1159
+2024-03-27 15:05:23 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1180

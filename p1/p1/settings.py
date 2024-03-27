@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'drf_yasg',
     'payments',
-    'account'
+    'account',
+    'scheduler',
 ]
 
 MIDDLEWARE = [
@@ -164,8 +165,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 import os
-STATIC_URL = 'static/'
-STATIC_ROOT='/home/ubuntu/deployment/static'
+STATIC_URL = '/static/'
+STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Default primary key field type
@@ -209,7 +212,17 @@ import os
 
 LOG_DIR = 'logs'
 if not os.path.exists(LOG_DIR):
-    os.makedirs(LOG_DIR)
+    try:
+        os.makedirs(LOG_DIR, mode=0o755)
+    except OSError as e:
+        print(f"Error creating log directory: {e}")
+
+LOG_FILE = os.path.join(LOG_DIR, 'app.log')
+try:
+    with open(LOG_FILE, 'a'):
+        os.utime(LOG_FILE, None)
+except IOError as e:
+    print(f"Error creating log file: {e}")
 
 LOGGING = {
     'version': 1,
@@ -218,12 +231,12 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',  # Set the minimum level to DEBUG
             'class': 'logging.handlers.TimedRotatingFileHandler',
-            'filename': os.path.join(LOG_DIR, 'app.log'),
+            'filename': LOG_FILE,
             'when': 'midnight',
             'interval': 1,
             'backupCount': 10,
             'formatter': 'standard',
-             'encoding': 'utf-8',
+            'encoding': 'utf-8',
         },
         'console': {
             'level': 'DEBUG',  # Also log to console for development/debugging

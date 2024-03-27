@@ -2,13 +2,17 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 from account.serializers import SendPasswordResetEmailSerializer, UserChangePasswordSerializer, UserLoginSerializer, UserPasswordResetSerializer, UserProfileSerializer, UserRegistrationSerializer
-from account.serializers import UserLoginSerializer1,UserLoginSerializer2
+from account.serializers import UserLoginSerializer1,UserLoginSerializer2,UserLoginSerializer
 from django.contrib.auth import authenticate
 from account.renderers import UserRenderer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
 from account.models import User
 from rest_framework.decorators import authentication_classes, permission_classes
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+
+
 
 
 # Generate Token Manually
@@ -48,23 +52,42 @@ class UserRegistrationView(APIView):
       
 @authentication_classes([])  # No authentication required
 @permission_classes([])  
+
 class UserLoginView(APIView):
-  renderer_classes = [UserRenderer]
-  def post(self, request, format=None):
-    x=request.data
-    email=x['email'] 
-    password=x['password']
-    user = authenticate(username=email, password=password)
-    if user is not None:
-      if user.is_active:
-        user1 = user.is_admin
-        token = get_tokens_for_user(user)
-        token["privilege"]=str(user1)
-        return Response({'token':token, 'msg':'Login Success'}, status=status.HTTP_200_OK)
-      else:
-        return Response({'errors': {'non_field_errors': ['User is not active']}}, status=status.HTTP_404_NOT_FOUND)
-    else:
-      return Response({'errors':{'non_field_errors':['Email/Username or Password is not Valid']}}, status=status.HTTP_404_NOT_FOUND)
+    renderer_classes = [UserRenderer]
+    # serializer_class = UserLoginSerializer
+    @swagger_auto_schema(
+        request_body=openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                'email': openapi.Schema(type=openapi.TYPE_STRING),
+                'password': openapi.Schema(type=openapi.TYPE_STRING, format=openapi.FORMAT_PASSWORD),
+            },
+            required=['email', 'password']
+        ),
+        responses={200: 'Login successful', 404: 'Not Found'},
+        operation_summary="User Login",
+        operation_description="Login to the system with email and password."
+    )
+    def post(self, request, format=None):
+        # serializer = self.serializer_class(data=request.data)
+        # serializer.is_valid(raise_exception=True)
+        x = request.data
+        email = x['email']
+        password = x['password']
+        # email = serializer.validated_data['email']
+        # password = serializer.validated_data['password']
+        user = authenticate(username=email, password=password)
+        if user is not None:
+            if user.is_active:
+                user1 = user.is_admin
+                token = get_tokens_for_user(user)
+                token["privilege"] = str(user1)
+                return Response({'token': token, 'msg': 'Login Success'}, status=status.HTTP_200_OK)
+            else:
+                return Response({'errors': {'non_field_errors': ['User is not active']}}, status=status.HTTP_404_NOT_FOUND)
+        else:
+            return Response({'errors':{'non_field_errors':['Email/Username or Password is not Valid']}}, status=status.HTTP_404_NOT_FOUND)
     
     
 @authentication_classes([])  # No authentication required
