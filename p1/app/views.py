@@ -8,30 +8,36 @@ from .serializers import BookingSerializer
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from django.core.cache import cache
-
+from flags.state import flag_enabled
+from rest_framework.permissions import BasePermission
+from functools import wraps
 CACHE_TIMEOUT = 10
 
 
 @swagger_auto_schema(method='GET', responses={200: BookingSerializer(many=True)})
 @api_view(['GET'])
+
 def get_bookings(request):
-    """
-    Retrieves a list of bookings.
-    """
-    timezone_name = request.META.get('HTTP_USER_TIMEZONE', 'UTC')  # Get timezone from request headers
-    print(timezone_name,'timezone_name')
-    # Check cache first
-    cache_key = f"get:bookings_{timezone_name}"
-    cached_data = cache.get(cache_key)
-    if cached_data:
-        print(cached_data)
-        return Response(cached_data, status=status.HTTP_200_OK)
-    bookings = Booking.objects.all()
-    serializer = BookingSerializer(instance=bookings, context={'timezone_name': timezone_name},many=True)
-    # Set cache
-    cache.set(cache_key, serializer.data)
-    # cache.set(cache_key, serializer.data, timeout=CACHE_TIMEOUT)
-    return Response(serializer.data, status=status.HTTP_200_OK)
+    if flag_enabled('MY_FEATURE', request=request):
+        """
+        Retrieves a list of bookings.
+        """
+        timezone_name = request.META.get('HTTP_USER_TIMEZONE', 'UTC')  # Get timezone from request headers
+        print(timezone_name,'timezone_name')
+        # Check cache first
+        cache_key = f"get:bookings_{timezone_name}"
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            print(cached_data)
+            return Response(cached_data, status=status.HTTP_200_OK)
+        bookings = Booking.objects.all()
+        serializer = BookingSerializer(instance=bookings, context={'timezone_name': timezone_name},many=True)
+        # Set cache
+        cache.set(cache_key, serializer.data)
+        # cache.set(cache_key, serializer.data, timeout=CACHE_TIMEOUT)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    else:
+        return Response({'status':'flag is false'})
 
 @swagger_auto_schema(method='POST', request_body=BookingSerializer, responses={201: openapi.Response('Created')},
                      manual_parameters=[

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'payments',
     'account',
     'scheduler',
+    'flags',
 ]
 
 MIDDLEWARE = [
@@ -309,3 +310,12 @@ SCHEDULER_CONFIG = {
     'DEFAULT_TIMEOUT': 300,  # 5 minutes
     'SCHEDULER_INTERVAL': 10,  # 10 seconds
 }
+
+
+FLAGS = {
+    'MY_FEATURE': [{'condition': 'boolean', 'value': True}],
+}
+
+# FLAGS = {
+#   'MY_FLAG': [{'condition': 'user', 'value': 'utkarsh'}]
+# }

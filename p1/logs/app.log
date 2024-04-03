@@ -405,3 +405,156 @@ AssertionError: Serializer class or instance required, not dict
 2024-03-27 14:38:03 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 619
 2024-03-27 14:38:04 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1159
 2024-03-27 15:05:23 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1180
+2024-03-27 18:07:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:07:54 [WARNING] django.request: Not Found: /
+2024-03-27 18:07:54 [WARNING] django.server: "GET / HTTP/1.1" 404 1097
+2024-03-27 18:08:01 [WARNING] django.request: Unauthorized: /get_bookings/
+2024-03-27 18:08:01 [WARNING] django.server: "GET /get_bookings/ HTTP/1.1" 401 1476
+2024-03-27 18:08:13 [WARNING] django.request: Unauthorized: /get_bookings/
+2024-03-27 18:08:13 [WARNING] django.server: "GET /get_bookings/ HTTP/1.1" 401 58
+2024-03-27 18:08:34 [INFO] django.server: "POST /user/login/ HTTP/1.1" 200 422
+2024-03-27 18:08:53 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 90
+2024-03-27 18:09:03 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-27 18:09:04 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:09:08 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2024-03-27 18:09:08 [ERROR] django.request: Internal Server Error: /get_bookings/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2024-03-27 18:09:08 [ERROR] django.server: "GET /get_bookings/ HTTP/1.1" 500 7622
+2024-03-27 18:10:02 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-03-27 18:10:03 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:10:06 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 26
+2024-03-27 18:12:03 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-27 18:12:03 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:12:43 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 26
+2024-03-27 18:12:44 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 26
+2024-03-27 18:12:57 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-27 18:12:58 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:13:01 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 658
+2024-03-27 18:13:01 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1173
+2024-03-27 18:14:16 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-27 18:14:17 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:14:35 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-27 18:14:36 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:14:47 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-03-27 18:14:48 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:15:12 [INFO] django.server: "POST /user/login/ HTTP/1.1" 200 415
+2024-03-27 18:15:38 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 90
+2024-03-27 18:15:51 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-27 18:15:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-27 18:15:56 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 90
+2024-03-27 18:16:00 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-27 18:16:01 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-28 10:11:16 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-28 10:11:18 [WARNING] django.request: Unauthorized: /get_bookings/
+2024-03-28 10:11:18 [WARNING] django.server: "GET /get_bookings/ HTTP/1.1" 401 1504
+2024-03-28 10:11:24 [WARNING] django.request: Unauthorized: /get_bookings/
+2024-03-28 10:11:24 [WARNING] django.server: "GET /get_bookings/ HTTP/1.1" 401 1511
+2024-03-28 10:11:34 [INFO] django.server: "POST /user/login/ HTTP/1.1" 200 412
+2024-03-28 10:11:57 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 26
+2024-03-28 10:11:59 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 26
+2024-03-28 10:11:59 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 26
+2024-03-28 10:12:00 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 26
+2024-03-28 10:12:14 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-03-28 10:12:15 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-28 10:12:17 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 90
+2024-03-28 10:53:08 [WARNING] django.request: Unauthorized: /get_bookings/
+2024-03-28 10:53:08 [WARNING] django.server: "GET /get_bookings/ HTTP/1.1" 401 1560
+2024-03-28 10:53:10 [WARNING] django.request: Unauthorized: /get_bookings/
+2024-03-28 10:53:10 [WARNING] django.server: "GET /get_bookings/ HTTP/1.1" 401 1480
+2024-03-28 10:53:11 [WARNING] django.request: Unauthorized: /get_bookings/
+2024-03-28 10:53:11 [WARNING] django.server: "GET /get_bookings/ HTTP/1.1" 401 1496
+2024-03-28 10:53:14 [WARNING] django.request: Not Found: /
+2024-03-28 10:53:14 [WARNING] django.server: "GET / HTTP/1.1" 404 1074
+2024-03-28 10:53:19 [INFO] django.server: "GET /swagger/ HTTP/1.1" 200 705
+2024-03-28 10:53:20 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1182
+2024-03-28 10:53:23 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1096
+2024-03-28 10:53:23 [INFO] django.server: "GET /swagger/?format=openapi HTTP/1.1" 200 1173
+2024-04-03 10:23:10 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-03 12:45:44 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-03 12:46:56 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-03 12:48:59 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): api.razorpay.com:443
+2024-04-03 12:48:59 [DEBUG] urllib3.connectionpool: https://api.razorpay.com:443 "POST /v1/orders HTTP/1.1" 401 76
+2024-04-03 12:48:59 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py", line 26, in post
+    response = client.order.create(dict(amount=order_amount, currency=order_currency, receipt=order_receipt, notes=notes, payment_capture='0'))
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\order.py", line 71, in create
+    return self.post_url(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\base.py", line 20, in post_url
+    return self.client.post(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 156, in post
+    return self.request('post', path, data=data, **options)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 137, in request
+    raise BadRequestError(msg)
+razorpay.errors.BadRequestError: Authentication failed
+2024-04-03 12:48:59 [ERROR] django.request: Internal Server Error: /pay/create_payment_order/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py", line 26, in post
+    response = client.order.create(dict(amount=order_amount, currency=order_currency, receipt=order_receipt, notes=notes, payment_capture='0'))
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\order.py", line 71, in create
+    return self.post_url(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\base.py", line 20, in post_url
+    return self.client.post(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 156, in post
+    return self.request('post', path, data=data, **options)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 137, in request
+    raise BadRequestError(msg)
+razorpay.errors.BadRequestError: Authentication failed
+2024-04-03 12:48:59 [ERROR] django.server: "POST /pay/create_payment_order/ HTTP/1.1" 500 15590
+2024-04-03 12:49:51 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py changed, reloading.
+2024-04-03 12:49:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
