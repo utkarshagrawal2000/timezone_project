@@ -687,3 +687,5 @@ razorpay.errors.BadRequestError: Authentication failed
 2024-04-03 13:20:39 [DEBUG] urllib3.connectionpool: https://api.razorpay.com:443 "POST /v1/orders HTTP/1.1" 200 261
 2024-04-03 13:20:39 [INFO] django.server: "POST /pay/create_payment_order/ HTTP/1.1" 200 140
 2024-04-03 13:21:39 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-04-03 13:24:30 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-03 13:24:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
