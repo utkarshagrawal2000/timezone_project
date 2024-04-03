@@ -6,12 +6,13 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 import razorpay
+import os
 # Create your views here.
 class create_payment_order(APIView):
     def post(self, request, format=None):
         context = {}
-        skey='rzp_live_iz6Zo5rYZvS5hw'
-        scrt='1G167WSywSWzWiHqKPu72BXb'
+        skey=os.environ.get('skey')
+        scrt=os.environ.get('scrt')
         print("INSIDE Create Order!!!",skey,scrt)
         client = razorpay.Client(auth=(skey, scrt))
         phone = request.data.get('phone')

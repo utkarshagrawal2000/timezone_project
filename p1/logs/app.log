@@ -558,3 +558,132 @@ razorpay.errors.BadRequestError: Authentication failed
 2024-04-03 12:48:59 [ERROR] django.server: "POST /pay/create_payment_order/ HTTP/1.1" 500 15590
 2024-04-03 12:49:51 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py changed, reloading.
 2024-04-03 12:49:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-03 12:49:56 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): api.razorpay.com:443
+2024-04-03 12:49:56 [DEBUG] urllib3.connectionpool: https://api.razorpay.com:443 "POST /v1/orders HTTP/1.1" 200 261
+2024-04-03 12:49:56 [INFO] django.server: "POST /pay/create_payment_order/ HTTP/1.1" 200 140
+2024-04-03 13:18:45 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-03 13:18:51 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): api.razorpay.com:443
+2024-04-03 13:18:51 [DEBUG] urllib3.connectionpool: https://api.razorpay.com:443 "POST /v1/orders HTTP/1.1" 401 76
+2024-04-03 13:18:51 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py", line 27, in post
+    response = client.order.create(dict(amount=order_amount, currency=order_currency, receipt=order_receipt, notes=notes, payment_capture='0'))
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\order.py", line 71, in create
+    return self.post_url(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\base.py", line 20, in post_url
+    return self.client.post(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 156, in post
+    return self.request('post', path, data=data, **options)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 137, in request
+    raise BadRequestError(msg)
+razorpay.errors.BadRequestError: Authentication failed
+2024-04-03 13:18:51 [ERROR] django.request: Internal Server Error: /pay/create_payment_order/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py", line 27, in post
+    response = client.order.create(dict(amount=order_amount, currency=order_currency, receipt=order_receipt, notes=notes, payment_capture='0'))
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\order.py", line 71, in create
+    return self.post_url(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\base.py", line 20, in post_url
+    return self.client.post(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 156, in post
+    return self.request('post', path, data=data, **options)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 137, in request
+    raise BadRequestError(msg)
+razorpay.errors.BadRequestError: Authentication failed
+2024-04-03 13:18:51 [ERROR] django.server: "POST /pay/create_payment_order/ HTTP/1.1" 500 15633
+2024-04-03 13:19:43 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-03 13:19:47 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): api.razorpay.com:443
+2024-04-03 13:19:47 [DEBUG] urllib3.connectionpool: https://api.razorpay.com:443 "POST /v1/orders HTTP/1.1" 401 76
+2024-04-03 13:19:47 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py", line 27, in post
+    response = client.order.create(dict(amount=order_amount, currency=order_currency, receipt=order_receipt, notes=notes, payment_capture='0'))
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\order.py", line 71, in create
+    return self.post_url(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\base.py", line 20, in post_url
+    return self.client.post(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 156, in post
+    return self.request('post', path, data=data, **options)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 137, in request
+    raise BadRequestError(msg)
+razorpay.errors.BadRequestError: Authentication failed
+2024-04-03 13:19:47 [ERROR] django.request: Internal Server Error: /pay/create_payment_order/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py", line 27, in post
+    response = client.order.create(dict(amount=order_amount, currency=order_currency, receipt=order_receipt, notes=notes, payment_capture='0'))
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\order.py", line 71, in create
+    return self.post_url(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\resources\base.py", line 20, in post_url
+    return self.client.post(url, data, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 156, in post
+    return self.request('post', path, data=data, **options)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\razorpay\client.py", line 137, in request
+    raise BadRequestError(msg)
+razorpay.errors.BadRequestError: Authentication failed
+2024-04-03 13:19:47 [ERROR] django.server: "POST /pay/create_payment_order/ HTTP/1.1" 500 15581
+2024-04-03 13:20:34 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
+2024-04-03 13:20:35 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-03 13:20:38 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): api.razorpay.com:443
+2024-04-03 13:20:39 [DEBUG] urllib3.connectionpool: https://api.razorpay.com:443 "POST /v1/orders HTTP/1.1" 200 261
+2024-04-03 13:20:39 [INFO] django.server: "POST /pay/create_payment_order/ HTTP/1.1" 200 140
+2024-04-03 13:21:39 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\p1\settings.py changed, reloading.
