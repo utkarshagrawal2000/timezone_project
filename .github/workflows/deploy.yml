@@ -45,10 +45,13 @@ jobs:
       #   continue-on-error: true
 
       - name: Execute tests
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
         run: |
           source venv/bin/activate
           python -m pip install --upgrade pip
           pip install redis redis-cli
+          export SECRET_KEY="$SECRET_KEY"  # Set SECRET_KEY environment variable
           python p1/manage.py test app
       - name: Deploy to server
         if: success()
