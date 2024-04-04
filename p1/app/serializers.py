@@ -1,7 +1,8 @@
 from rest_framework import serializers
 from datetime import datetime
 import pytz
-from .models import Booking
+from .models import Booking, Hotel, Room, Image, Rating
+
 from drf_yasg.utils import swagger_auto_schema
 
 
@@ -73,3 +74,49 @@ class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
         fields = ['id', 'room', 'start_time', 'end_time']
+
+
+class ImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Image
+        fields = ['image']
+
+class HotelSerializer(serializers.ModelSerializer):
+    images = ImageSerializer(many=True, read_only=True)
+    class Meta:
+        model = Hotel
+        fields = '__all__'
+
+class TopHotelsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Hotel
+        fields = ['id', 'name', 'overall_rating']
+
+class RoomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Room
+        fields = ['id', 'hotel', 'room_number', 'availability']
+
+    def create(self, validated_data):
+        room = Room(**validated_data)
+        room.full_clean()  # Trigger model validation
+        room.save()
+        return room
+
+    def update(self, instance, validated_data):
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        instance.full_clean()  # Trigger model validation
+        instance.save()
+        return instance
+
+
+class RatingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Rating
+        fields = ['id', 'hotel', 'user', 'rating', 'review']
+
+    def validate_rating(self, value):
+        if value < 1 or value > 5:
+            raise serializers.ValidationError('Rating must be between 1 and 5')
+        return value

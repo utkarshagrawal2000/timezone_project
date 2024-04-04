@@ -3,14 +3,20 @@ import pytz
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Booking
-from .serializers import BookingSerializer
+from .models import Booking,Hotel,Rating,Image,Room
+from .serializers import BookingSerializer,HotelSerializer,RoomSerializer,TopHotelsSerializer,ImageSerializer,RatingSerializer
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from django.core.cache import cache
 from flags.state import flag_enabled
 from rest_framework.permissions import BasePermission
 from functools import wraps
+from rest_framework.views import APIView
+from rest_framework import generics
+from django.db.models import Avg
+from django.core.exceptions import ValidationError
+
+
 CACHE_TIMEOUT = 10
 
 
@@ -62,3 +68,95 @@ def create_booking(request):
         return Response({'msg':'created'}, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+# class Hotel(APIView):
+#     def post(self, request):
+#         current_user = request.user
+#         user_data = current_user.id
+#         # Serialize the request data using HotelSerializer
+#         serializer = HotelSerializer(data=request.data)
+#         serializer.is_valid(raise_exception=True)
+#         # Save the serialized data with the associated user ID
+#         serializer.save(owner=user_data)
+#         return Response({'msg': 'Hotel created Successfully'}, status=status.HTTP_201_CREATED)
+
+class HotelListCreate(generics.ListCreateAPIView):
+    queryset = Hotel.objects.all()
+    serializer_class = HotelSerializer
+
+class HotelRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Hotel.objects.all()
+    serializer_class = HotelSerializer
+
+class TopHotels(generics.ListAPIView):
+    serializer_class = TopHotelsSerializer
+
+    def get_queryset(self):
+        city = self.request.query_params.get('city')
+        print(city,'dd')
+        
+        queryset = Hotel.objects.annotate(avg_rating=Avg('ratings__rating'))
+        
+        # Filter hotels by city
+        if city:
+            queryset = queryset.filter(city=city)
+
+        # If city is specified, order by average rating within the city, else order by overall rating
+        if city:
+            queryset = queryset.order_by('-avg_rating')[:10]
+        else:
+            queryset = queryset.order_by('-overall_rating')[:10]
+
+        return queryset
+    
+class ImageUpload(generics.CreateAPIView):
+    queryset = Image.objects.all()
+    serializer_class = ImageSerializer
+
+    def create(self, request, *args, **kwargs):
+        hotel_id = self.kwargs.get('hotel_id')
+        images_data = request.FILES.getlist('image')  # Get list of uploaded images
+        for image_data in images_data:
+            serializer = self.get_serializer(data={'image': image_data, 'hotel': hotel_id})
+            serializer.is_valid(raise_exception=True)
+            serializer.save(hotel_id=hotel_id)  # Ensure hotel_id is passed when saving
+        return Response(status=status.HTTP_201_CREATED)
+
+class ImageRetrieve(generics.ListAPIView):
+    serializer_class = ImageSerializer
+    lookup_url_kwarg = 'hotel_id'
+    def get_queryset(self):
+        hotel_id = self.kwargs.get(self.lookup_url_kwarg)
+        obj=Image.objects.filter(hotel_id=hotel_id)
+        print(obj)
+        return obj
+
+
+class RatingListCreate(generics.ListCreateAPIView):
+    queryset = Rating.objects.all()
+    serializer_class = RatingSerializer
+
+class RatingRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Rating.objects.all()
+    serializer_class = RatingSerializer
+
+
+class RoomListCreate(generics.ListCreateAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        try:
+            serializer.is_valid(raise_exception=True)
+            self.perform_create(serializer)
+            headers = self.get_success_headers(serializer.data)
+            return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+        except ValidationError as e:
+            return Response({'error': dict(e.message_dict)}, status=status.HTTP_400_BAD_REQUEST)
+
+    def perform_create(self, serializer):
+        serializer.save()
+
+class RoomRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
