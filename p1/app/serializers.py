@@ -69,11 +69,14 @@ class BookingSerializer(serializers.ModelSerializer):
         print(start_time,'start_time')
         end_time = user_timezone.localize(datetime.strptime(data['end_time'], '%Y-%m-%dT%H:%M'))
         print(end_time,'end_time')
-        return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+        print(data,'dddddddddddddddddddddddd')
+        rooms=data.get('rooms')
+        payment_mode=data.get('payment_mode')
+        return {'start_time': start_time, 'end_time': end_time, 'rooms': rooms,'payment_mode':payment_mode}
     
     class Meta:
         model = Booking
-        fields = ['id', 'room', 'start_time', 'end_time']
+        fields = ['id', 'rooms', 'start_time', 'end_time', 'user_timezone', 'is_confirmed', 'payment_mode', 'payment_status', 'payment_transaction_id']
 
 
 class ImageSerializer(serializers.ModelSerializer):

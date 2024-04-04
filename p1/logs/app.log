@@ -1814,3 +1814,1858 @@ AttributeError: 'ValidationError' object has no attribute 'detail'
 2024-04-04 12:20:17 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2024-04-04 12:20:24 [WARNING] django.request: Bad Request: /rooms/
 2024-04-04 12:20:24 [WARNING] django.server: "POST /rooms/ HTTP/1.1" 400 70
+2024-04-04 13:01:17 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py changed, reloading.
+2024-04-04 13:01:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 13:01:23 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\models.py changed, reloading.
+2024-04-04 13:01:24 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 13:07:43 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\models.py changed, reloading.
+2024-04-04 13:07:45 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 13:07:58 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py changed, reloading.
+2024-04-04 13:08:00 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 13:21:40 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 13:21:43 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 13:26:16 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py changed, reloading.
+2024-04-04 13:26:17 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 13:27:25 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py changed, reloading.
+2024-04-04 13:27:26 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 13:27:46 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\payments\urls.py changed, reloading.
+2024-04-04 13:27:47 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 14:54:27 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 14:54:29 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 14:58:20 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py changed, reloading.
+2024-04-04 14:58:21 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 14:59:00 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\payments\views.py changed, reloading.
+2024-04-04 14:59:02 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 14:59:35 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 14:59:37 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:03:08 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:03:09 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:03:59 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:04:00 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:05:36 [WARNING] django.request: Unauthorized: /create_booking/
+2024-04-04 15:05:36 [WARNING] django.server: "GET /create_booking/ HTTP/1.1" 401 58
+2024-04-04 15:05:40 [WARNING] django.request: Unauthorized: /create_booking/
+2024-04-04 15:05:40 [WARNING] django.server: "GET /create_booking/ HTTP/1.1" 401 183
+2024-04-04 15:05:59 [WARNING] django.request: Method Not Allowed: /create_booking/
+2024-04-04 15:05:59 [WARNING] django.server: "GET /create_booking/ HTTP/1.1" 405 40
+2024-04-04 15:06:13 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_booking.is_confirmed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 42, in get_bookings
+    cache.set(cache_key, serializer.data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_booking.is_confirmed
+2024-04-04 15:06:14 [ERROR] django.request: Internal Server Error: /get_bookings/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_booking.is_confirmed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 42, in get_bookings
+    cache.set(cache_key, serializer.data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_booking.is_confirmed
+2024-04-04 15:06:14 [ERROR] django.server: "GET /get_bookings/ HTTP/1.1" 500 20433
+2024-04-04 15:07:04 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:07:08 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 2
+2024-04-04 15:07:43 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 59, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 68, in to_internal_value
+    start_time = user_timezone.localize(datetime.strptime(data['start_time'], '%Y-%m-%dT%H:%M'))
+KeyError: 'start_time'
+2024-04-04 15:07:43 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 59, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 68, in to_internal_value
+    start_time = user_timezone.localize(datetime.strptime(data['start_time'], '%Y-%m-%dT%H:%M'))
+KeyError: 'start_time'
+2024-04-04 15:07:43 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 15701
+2024-04-04 15:12:36 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:12:50 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:12:51 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:15:04 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 72, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:15:04 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 72, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:15:04 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16618
+2024-04-04 15:15:26 [INFO] django.server: "GET /rooms/ HTTP/1.1" 200 152
+2024-04-04 15:16:39 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py changed, reloading.
+2024-04-04 15:16:40 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:16:41 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 73, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:16:42 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 73, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:16:42 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16673
+2024-04-04 15:19:27 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:19:31 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 73, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:19:31 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 73, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:19:31 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16722
+2024-04-04 15:20:40 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py changed, reloading.
+2024-04-04 15:20:42 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:20:45 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 73, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:20:45 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 73, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:20:45 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16669
+2024-04-04 15:21:38 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py changed, reloading.
+2024-04-04 15:21:39 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:21:42 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 74, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:21:42 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 74, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:21:42 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16717
+2024-04-04 15:21:43 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 74, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:21:44 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 60, in create_booking
+    if serializer.is_valid():
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py", line 74, in to_internal_value
+    return {'start_time': start_time, 'end_time': end_time, 'room': data['room']}
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'room'
+2024-04-04 15:21:44 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16722
+2024-04-04 15:22:33 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py changed, reloading.
+2024-04-04 15:22:34 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:22:42 [WARNING] django.request: Bad Request: /create_booking/
+2024-04-04 15:22:42 [WARNING] django.server: "POST /create_booking/ HTTP/1.1" 400 35
+2024-04-04 15:23:54 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py changed, reloading.
+2024-04-04 15:23:55 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:23:58 [WARNING] django.request: Bad Request: /create_booking/
+2024-04-04 15:23:58 [WARNING] django.server: "POST /create_booking/ HTTP/1.1" 400 35
+2024-04-04 15:24:14 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:24:15 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:24:22 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 74, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Booking.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Booking.objects.create()`. You may need to make the field read-only, or override the BookingSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+2024-04-04 15:24:22 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 74, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Booking.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Booking.objects.create()`. You may need to make the field read-only, or override the BookingSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+2024-04-04 15:24:22 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 18855
+2024-04-04 15:26:27 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:26:28 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:26:33 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:26:34 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:26:36 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 75, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Booking.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Booking.objects.create()`. You may need to make the field read-only, or override the BookingSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+2024-04-04 15:26:36 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 75, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Booking.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Booking.objects.create()`. You may need to make the field read-only, or override the BookingSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+2024-04-04 15:26:36 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 18875
+2024-04-04 15:30:00 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:30:03 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 75, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Booking.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Booking.objects.create()`. You may need to make the field read-only, or override the BookingSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+2024-04-04 15:30:03 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 75, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Booking.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Booking.objects.create()`. You may need to make the field read-only, or override the BookingSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+
+2024-04-04 15:30:03 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 18844
+2024-04-04 15:32:09 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\serializers.py changed, reloading.
+2024-04-04 15:32:11 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:32:20 [INFO] django.server: "POST /create_booking/ HTTP/1.1" 201 54
+2024-04-04 15:32:36 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 213
+2024-04-04 15:32:47 [INFO] django.server: "GET /rooms/ HTTP/1.1" 200 181
+2024-04-04 15:32:59 [INFO] django.server: "POST /create_booking/ HTTP/1.1" 201 54
+2024-04-04 15:33:03 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 197
+2024-04-04 15:33:14 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 213
+2024-04-04 15:33:15 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 182
+2024-04-04 15:33:16 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 213
+2024-04-04 15:33:17 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 213
+2024-04-04 15:33:18 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 213
+2024-04-04 15:35:32 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 75, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:35:32 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 75, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:35:32 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 17441
+2024-04-04 15:40:59 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:41:01 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:41:03 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:41:04 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:41:19 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:41:19 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:41:19 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 17543
+2024-04-04 15:43:01 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:43:02 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:43:21 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:43:21 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:43:21 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 17542
+2024-04-04 15:43:41 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:43:42 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:43:46 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:43:46 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:43:46 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 17548
+2024-04-04 15:44:47 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:44:48 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:44:55 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:44:55 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:44:55 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 17557
+2024-04-04 15:46:50 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:46:51 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:46:54 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:46:54 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:46:54 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 17567
+2024-04-04 15:48:14 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:48:16 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:48:18 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:48:18 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:48:18 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 17457
+2024-04-04 15:48:19 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:48:19 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ','
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 76, in create_booking
+    serializer.save(is_confirmed=True, payment_mode='cash', payment_status='completed')
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\serializers.py", line 987, in create
+    field.set(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1292, in set
+    else self.target_field.get_prep_value(obj)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ','.
+2024-04-04 15:48:19 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 17501
+2024-04-04 15:48:49 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:48:50 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:48:58 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:48:59 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:49:01 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 90, in create_booking
+    booking = Booking.objects.create(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+2024-04-04 15:49:01 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 90, in create_booking
+    booking = Booking.objects.create(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+2024-04-04 15:49:01 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16212
+2024-04-04 15:49:03 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 90, in create_booking
+    booking = Booking.objects.create(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+2024-04-04 15:49:03 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 90, in create_booking
+    booking = Booking.objects.create(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Booking() got unexpected keyword arguments: 'room'
+2024-04-04 15:49:03 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16220
+2024-04-04 15:49:41 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:49:42 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:49:59 [ERROR] app.middleware: Unhandled exception occurred
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 90, in create_booking
+    booking = Booking.objects.create(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use rooms.set() instead.
+2024-04-04 15:49:59 [ERROR] django.request: Internal Server Error: /create_booking/
+Traceback (most recent call last):
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\p1\app\views.py", line 90, in create_booking
+    booking = Booking.objects.create(
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\utkarsh\tolearn\djangotimezone\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use rooms.set() instead.
+2024-04-04 15:49:59 [ERROR] django.server: "POST /create_booking/ HTTP/1.1" 500 16666
+2024-04-04 15:51:25 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:51:26 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:51:28 [INFO] django.server: "POST /create_booking/ HTTP/1.1" 201 54
+2024-04-04 15:51:33 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 263
+2024-04-04 15:54:18 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:54:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:54:47 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 190
+2024-04-04 15:54:49 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 179
+2024-04-04 15:54:55 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 259
+2024-04-04 15:55:08 [INFO] django.server: "POST /create_booking/ HTTP/1.1" 201 54
+2024-04-04 15:55:20 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 193
+2024-04-04 15:55:34 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:55:38 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 206
+2024-04-04 15:57:28 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 200
+2024-04-04 15:57:30 [INFO] django.server: "GET /get_bookings/ HTTP/1.1" 200 217
+2024-04-04 15:58:30 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:58:31 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-04 15:59:01 [INFO] django.utils.autoreload: D:\utkarsh\tolearn\djangotimezone\p1\app\views.py changed, reloading.
+2024-04-04 15:59:02 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

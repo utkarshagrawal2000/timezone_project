@@ -15,7 +15,8 @@ from rest_framework.views import APIView
 from rest_framework import generics
 from django.db.models import Avg
 from django.core.exceptions import ValidationError
-
+from payments.views import create_payment_order
+from django.db import transaction
 
 CACHE_TIMEOUT = 10
 
@@ -39,7 +40,7 @@ def get_bookings(request):
         bookings = Booking.objects.all()
         serializer = BookingSerializer(instance=bookings, context={'timezone_name': timezone_name},many=True)
         # Set cache
-        cache.set(cache_key, serializer.data)
+        # cache.set(cache_key, serializer.data)
         # cache.set(cache_key, serializer.data, timeout=CACHE_TIMEOUT)
         return Response(serializer.data, status=status.HTTP_200_OK)
     else:
@@ -51,23 +52,69 @@ def get_bookings(request):
                      ])
 @api_view(['POST'])
 def create_booking(request):
-    """
-    Creates a new booking.
-    """
     data = request.data
-    timezone_name = request.META.get('HTTP_USER_TIMEZONE', 'UTC')  # Get timezone from request headers
+    print(data)
+    timezone_name = request.META.get('HTTP_USER_TIMEZONE', 'UTC')
     print('Received timezone:', timezone_name)
-    
+
     serializer = BookingSerializer(data=data, context={'timezone_name': timezone_name})
     if serializer.is_valid():
         print(serializer.validated_data)
-        serializer.save()
-        # Clear cache for bookings specific to the timezone
-        cache_key = f"bookings_{timezone_name}"
-        cache.delete(cache_key)
-        return Response({'msg':'created'}, status=status.HTTP_201_CREATED)
-    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        payment_option = data.get('payment_mode')
 
+        if payment_option == 'pay_later':
+            serializer.save(is_confirmed=True, payment_status='pending')
+
+            # Clear cache for bookings specific to the timezone
+            cache_key = f"bookings_{timezone_name}"
+            cache.delete(cache_key)
+            
+            return Response({'msg': 'Booking created. Payment pending.'}, status=status.HTTP_201_CREATED)
+
+        elif payment_option == 'cash':
+            print(serializer.validated_data,'dddddddddddddwa')
+
+            start_time = serializer.validated_data['start_time']
+            end_time = serializer.validated_data['end_time']
+            print(start_time,end_time)
+            rooms_str = serializer.validated_data['rooms']
+            payment_mode = serializer.validated_data['payment_mode']
+            print(rooms_str,'fffffffaswsfwesfsegfesf')
+            room_ids = [int(room_id) for room_id in rooms_str.split(',') if room_id.strip()]
+            print(room_ids,'ffffffffffffffffffffffff')
+            # Ensure atomicity of the transaction
+            with transaction.atomic():
+                booking = Booking.objects.create(
+                    start_time=start_time,
+                    end_time=end_time,
+                    payment_mode=payment_mode,
+                    payment_status='completed'  # Assuming payment is already completed for cash mode
+                )
+                rooms = Room.objects.filter(id__in=room_ids)
+                booking.rooms.set(rooms)
+            # Clear cache for bookings specific to the timezone
+            cache_key = f"bookings_{timezone_name}"
+            cache.delete(cache_key)
+            
+            return Response({'msg': 'Booking created. Payment completed via cash.'}, status=status.HTTP_201_CREATED)
+
+        elif payment_option == 'online':
+            payment_transaction_id=create_payment_order(data)  # Implement this method to handle online payment and get transaction ID
+            if payment_transaction_id:
+                serializer.save(is_confirmed=True, payment_mode='online', payment_status='completed', payment_transaction_id=payment_transaction_id)
+
+                # Clear cache for bookings specific to the timezone
+                cache_key = f"bookings_{timezone_name}"
+                cache.delete(cache_key)
+                
+                return Response({'msg': 'Booking created. Online payment completed.'}, status=status.HTTP_201_CREATED)
+            else:
+                return Response({'error': 'Online payment failed. Please try again.'}, status=status.HTTP_400_BAD_REQUEST)
+
+        else:
+            return Response({'error': 'Invalid payment option.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 # class Hotel(APIView):
 #     def post(self, request):
 #         current_user = request.user

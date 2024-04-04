@@ -56,10 +56,14 @@ class Room(models.Model):
 
     
 class Booking(models.Model):
-    room = models.CharField(max_length=100)
+    rooms = models.ManyToManyField(Room)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
     user_timezone = models.CharField(max_length=50,default='UTC')  # Store user's timezone for reference
+    is_confirmed = models.BooleanField(default=False)
+    payment_mode = models.CharField(max_length=50)  # Field to store payment mode
+    payment_status = models.CharField(max_length=50, default='pending')  # Field to track payment status
+    payment_transaction_id = models.CharField(max_length=100, null=True, blank=True)  # To store payment transaction ID
 
     def __str__(self):
         return f"Booking for {self.room} from {self.start_date} to {self.end_date}"
