@@ -80,7 +80,7 @@ def create_booking(request):
             rooms_str = serializer.validated_data['rooms']
             payment_mode = serializer.validated_data['payment_mode']
             print(rooms_str,'fffffffaswsfwesfsegfesf')
-            room_ids = [int(room_id) for room_id in rooms_str.split(',') if room_id.strip()]
+            room_ids = [int(room_id) for room_id in str(rooms_str).split(',') if room_id.strip()]
             print(room_ids,'ffffffffffffffffffffffff')
             # Ensure atomicity of the transaction
             with transaction.atomic():

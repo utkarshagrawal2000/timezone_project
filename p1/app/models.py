@@ -66,4 +66,4 @@ class Booking(models.Model):
     payment_transaction_id = models.CharField(max_length=100, null=True, blank=True)  # To store payment transaction ID
 
     def __str__(self):
-        return f"Booking for {self.room} from {self.start_date} to {self.end_date}"
+        return f"Booking for {self.rooms} from {self.start_time} to {self.end_time}"
