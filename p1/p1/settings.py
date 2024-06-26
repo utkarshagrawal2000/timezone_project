@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 from datetime import timedelta
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 from dotenv import load_dotenv
@@ -46,6 +48,14 @@ INSTALLED_APPS = [
     'scheduler',
     'flags',
 ]
+INSTALLED_APPS += ['storages']
+
+
+AWS_ACCESS_KEY_ID = 'AKIA4MTWHIGT3CWA42IE'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'tolearn '
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -123,13 +133,22 @@ CACHE_DEFAULT_TIMEOUT = 60*60
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'timezone',
+        'USER': 'admin',
+        'PASSWORD': 'Okokokok',
+        'HOST': 'tolearn.ctcwc0ymkiij.ap-south-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -319,3 +338,13 @@ FLAGS = {
 # FLAGS = {
 #   'MY_FLAG': [{'condition': 'user', 'value': 'utkarsh'}]
 # }
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+
+sentry_sdk.init(
+    dsn="https://5ebf012e315d63d53ab282faa832070e@o4507497071181824.ingest.us.sentry.io/4507497073410048",
+    integrations=[DjangoIntegration()],
+    traces_sample_rate=1.0,
+    send_default_pii=True
+)
