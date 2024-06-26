@@ -51,11 +51,7 @@ INSTALLED_APPS = [
 INSTALLED_APPS += ['storages']
 
 
-AWS_ACCESS_KEY_ID = 'AKIA4MTWHIGT3CWA42IE'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'tolearn '
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
